@@ -1,0 +1,8 @@
+<expr> ::= <term> | <expr>+<term> | <expr>-<term> | <expr> or <term> | <expr> xor 	   <term> | <expr> implies <expr> | <expr> < <expr> | <expr> > <expr> | 	   <expr> == <expr> | ~<factor> | not <factor>
+
+<term> ::= <factor> | <term> and <factor> | <term> * <factor>
+
+<factor> ::= <Identifier> | <Const> | (<expr>) | <if> | <let>
+
+<let> ::= let <id> <assign> <expr> in <expr> end
+<if> ::= if <expr> then <expr> else <expr> fi
